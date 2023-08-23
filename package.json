@@ -1,0 +1,15 @@
+{
+  "name": "musicrm",
+  "version": "1.0.0",
+  "description": "Repository for a dedicated CRM for musicians",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:watch": "jest ./src/**/**.spec.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.6.3"
+  }
+}
