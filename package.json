@@ -5,11 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test:watch": "jest ./src/**/**.spec.js --watch"
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest ./src/**/**.spec.js --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.6.3"
+  },
+  "dependencies": {
+    "aws-sdk-mock": "^5.8.0",
+    "uuid": "^9.0.0"
   }
 }
