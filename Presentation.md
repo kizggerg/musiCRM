@@ -254,11 +254,34 @@ Also, don't forget, ChatGPT is excellent at writing test data!
 
 ## Deployment
 
-TODO
+Great, so we now have a unit of work done and tested. But how do we deploy it on an environment?
+
+Previously, deployment involved coordination and manual processes. Now, the industry standard is to use infrastructure as code:
+
+<img height="750px" src="./photos/DeploymentIAC.jpeg">
+
+"Infrastructure" here is taken liberally, to include not just cloud infrastructure but pipeline and other deployment infrastructure as well.
+
+Of course, if your deployment processes are codified, we can follow the same steps of using ChatGPT in development!
+
+<img height="750px" src="./photos/GeneratedTerraform.png">
 
 ## Maintenance
 
-TODO
+Lastly, we need to ensure that our software's health can be monitored, and that we have solutions in place to quickly recover from failures. The goal here can be summed up into one word: "Observability"
+
+<img height="750px" src="./photos/ObservabilityDrivenDevelopment.jpeg">
+
+Incorporating Observability into developmnent often takes the flavour of 5 categories:
+- Logs: Ensure you application is logging relevant behaviour so that you can audit those logs to understand system behaviour at a given time.
+- Metrics: Track information about your application like response rate, error codes, number of expenses, and other data as events occur in the platform.
+- Traces: Ensure that that control flow between various components and services can be understood on a request basis for a period of time.
+- Alarms: Be notified when anonalous events occur in production, and incorporate automated responses to those alarms to react to incidents in real time.
+- Dashboards: Ensure all observability information is easily accessible to interested parties. Dashboards should allow folks to get a "high-level" picture of system behaviour through charts and graphs over time.
+
+ChatGPT here can provide useful suggestions for us of what kinds of features within our application we want to observe:
+
+<img height="750px" src="./photos/ObservabilityExample.jpeg">
 
 ## Finale - The ChatGPT SDLC
 
